@@ -1,0 +1,147 @@
+body{
+    background-color: #ededee
+}
+.form_wizard{
+    padding: 50px;
+}
+.form_wizard > div:nth-child(2){
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px
+}
+.form_wizard > div:nth-child(1) img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px
+}
+.form_wizard > div:nth-child(1) .img_effect{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(45,45,45,.90);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px
+}
+.form_wizard > div:nth-child(1) .desc{
+    margin-top: 270px;
+    margin-left: 35px
+}
+.form_wizard > div:nth-child(1) .desc .title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.form_wizard > div:nth-child(1) .desc p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    width: 250px
+}
+.form_wizard > div:nth-child(2)[class*=col]{
+    background-color: white;
+    padding-left: 35px;
+    padding-right: 35px
+}
+.form_wizard header{
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+.form_wizard header .steps_liste_view .item{
+    border-radius: 10px;
+    width: 110px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+.form_wizard header .steps_liste_view .active{
+    background-color: skyblue;
+    color: white
+}
+.form_wizard header .steps_liste_view .loading{
+    background-color: #350063;
+    color: white
+}
+.form_wizard header .steps_liste_view .disable{
+    background-color: #ededee;
+    color: #a9a9a9
+}
+.form_wizard section .form_item .label{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: #0f0f0f;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.form_wizard section .form_item label{
+    font-size: 13px;
+    font-weight: 400;
+    color: #212529;
+}
+.form_wizard section .form_item .input-group-text,
+.form_wizard section .form_item .form-control{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+}
+.form_wizard section .form_item .input-group{
+    box-shadow: 0 0 24px rgba(91, 94, 222, 0.16);
+}
+.form_wizard section .form_item .input-group-prepend img{
+    width: 25px;
+    height: 25px
+}
+.form_wizard footer > div{
+    padding: 15px
+}
+.form_wizard footer input{
+    background-color: #350063;
+    color: white
+}
+@media(min-width: 950px){  
+.form_wizard section{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll
+}
+}
+@media(max-width: 950px){
+    .form_wizard{
+        padding: 15px
+    }
+    .form_wizard > div:nth-child(2){
+        border-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px
+    }
+    .form_wizard > div:nth-child(1) img, 
+    .form_wizard > div:nth-child(1) .img_effect{
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px
+    }
+    .form_wizard header .steps_liste_view .item{
+        width: 100%;
+        margin-bottom: 15px
+    }
+    .form_wizard > div:nth-child(1) .desc{
+        margin-top: 150px
+    }
+}
